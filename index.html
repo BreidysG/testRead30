@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 30</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Otra loca
+                <br><br>
+                Cuando Lili iba en secundaria, en la casa frente a donde vivían ella y sus tíos, vivía una chica de la misma edad que ella, con la que había hecho buena amistad, y también se llevaba bien con sus papás, don Chucho y doña Estela.
+                <br><br>
+                Una noche, entre sueño y no sueño, Lili alcanzó a escuchar el portón de la casa de su amiga abrirse y cerrarse, pero no se llegó a despertar del todo y no supo lo que ocurría: se llevaron a don Chucho de emergencia a México, en una ambulancia para atenderlo allá de un viejo padecimiento cardiaco que se le agravó repentinamente, y estaba sufriendo un infarto.
+                <br><br>
+                El camino de Chilpancingo a la ciudad de México es largo y don Chucho murió durante el viaje. Pero nada de eso lo supo Lili. En la mañana, salió como siempre de su casa para ir a la escuela.
+                <br><br>
+                El portón de la casa de don Chucho estaba abierto y había sillas a todo alrededor del patio y cochera. Eso no era extraño, pues era una familia de muchas relaciones sociales y fiestas; si acaso, era un poco raro que empezaran a preparar todo tan temprano. En una de las sillas estaba sentado don Chucho, con un pantalón beige, una playera beige con franjas color crema y unas sandalias de estar en casa. "¡Buenos días, don Chucho!", saludó Lili.
+                <br><br>
+                Él no le contestó, pero ella lo vio mirarla y sonreírle con esa sonrisa suya tan afable. Lili siguió caminando y, luego de unos pasos, oyó abrirse la puerta de su propia casa; no volteó, pues sabía que era su tía que, como todos los días, se asomaba a verla irse a la escuela.
+                <br><br>
+                Al volver de la escuela, al mediodía, la calle estaba atestada de autos y sobre el portón de la casa de don Chucho, un enorme moño negro comunicaba a los vecinos que la familia estaba de duelo. Lili pensó que habría muerto don Enrique, el anciano abuelito de su amiga, papá de doña Estela, que ya estaba muy anciano y siempre se encontraba enfermo.
+                <br><br>
+                Cuando entró a su casa preguntó a su tío: "Oye, ¿qué, ya se murió don Enrique?" "No, hija, ni te imaginas quién se murió". "¿Pues quién…?" "Don Chucho…" "¡¿Cómo?! Pero, ¿a qué hora? ¡Si en la mañana estaba bien, cuando me fui a la escuela estaba sentado en la cochera!" "¡Otra loca! –Exclamó el tío–. Lo mismo dice tu tía, que cuando salió a verte ir ahí estaba, pero eso no es posible pues murió en la noche, y no murió aquí sino en una ambulancia, en la carretera a México".
+                <br><br>
+                A Lili no la convencieron de ir al velorio. Estaba impresionada por la muerte del señor, pero mucho más impresionada porque ella lo había visto en la mañana, como si estuviera vivo cuando ya había muerto.
+                <br><br>
+                La tía de Lili se presentó a llevar unas flores, pero tampoco se atrevió a entrar; hizo señas a la hermana de doña Estela, que salió a recibirle las flores, y le contó lo que les había ocurrido a Lili y a ella: "No sólo yo lo vi, también lo vio Lili, unos momentos antes que yo.
+                <br><br>
+                Ella iba como a media cuadra cuando me asomé a verla irse, y don Chucho estaba sentado en una de esas sillas. Cuando lo saludé no me contestó, pero volteó a verme y me sonrió. Y lo mismo dice Lili, también a ella le sonrió en lugar de saludarla".
+                <br><br>
+                La hermana de doña Estela abrió tamaños ojos, y la tía de Lili continuó: "Tenía un pantalón beige y su playera, también beige, con rayas color crema, y unas sandalias, las que usa cuando se pone a barrer o regar la calle". "Es la ropa que tiene puesta ahorita, en la caja. Sólo le quitamos las sandalias…"
+                <br><br>
+            </p>
+
+                          
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
